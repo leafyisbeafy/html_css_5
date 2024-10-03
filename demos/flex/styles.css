@@ -122,8 +122,8 @@ header nav a.current-page {
     /* These styles apply to the text */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* if direction column, this is vertical alignment */
+    align-items: flex-start; /* if direction column, this is the horizontal alignment */
 }
 
 #banner h2 {
