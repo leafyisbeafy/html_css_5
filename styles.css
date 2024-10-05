@@ -20,7 +20,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -30,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    
 }
 ol, ul {
     list-style: none;
@@ -48,18 +48,25 @@ table {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 125%;
+    font-family: 'Bison Bold', sans-serif;
 }
+
+h1, h2, h3 {
+    font-family: 'Bison Bold', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem; /* Adjust this to change the h1 size */
+}
+
+p {
+    font-size: 1.2rem; /* or the size you prefer */
+}
+
 
 header {
-    background-color: #f51720;
-}
-
-header h1 {
-    font-family: 'Titillium Web', sans-serif;
-    color: white;
-    font-size: 50px;
+    background-color: #7ea8d8c4;
 }
 
 footer {
@@ -71,20 +78,12 @@ footer {
     color: #222222;
 }
 
+/* learnt from llm how to use fonts locally */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@font-face {
+    font-family: 'Bison Bold';
+    src: url('./fonts/Bison-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
