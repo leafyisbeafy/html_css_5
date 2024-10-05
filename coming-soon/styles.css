@@ -11,11 +11,16 @@ header {
 }
 
 #social-icons i {
-    color: CornflowerBlue;
+    color: #d4a8bb;
     border: solid darkgray;
-    padding: 12px;
+    padding: 13px;
     border-radius: 50%;
-    height: 20px;
+    height: 17px;
     width: 20px;
     text-align: center;
 }
+
+.highlight {
+    color: rgb(154, 126, 185);
+    font-weight: bold;
+  }
