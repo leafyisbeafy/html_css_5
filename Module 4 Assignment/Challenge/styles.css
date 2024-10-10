@@ -1,0 +1,82 @@
+/* Beginner-friendly CSS for the article preview component */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.content {
+    padding: 15px;
+}
+
+.content h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-details {
+    display: flex;
+    align-items: center;
+}
+
+.author-details img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-details p {
+    font-size: 0.8rem;
+    color: #333;
+}
+
+.share-button {
+    background-color: #eee;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.share-button:hover {
+    background-color: #ddd;
+}
+
+.share-button img {
+    width: 14px;
+    height: 14px;
+}
