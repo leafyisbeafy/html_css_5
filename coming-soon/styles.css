@@ -1,3 +1,5 @@
+/*citation ; use Cursor Code Editor*/
+
 body {
     font-family: 'Libre Franklin', sans-serif;
     color: #333;
@@ -47,7 +49,7 @@ footer {
 #social-icons {
     text-align: left;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 80px;
 }
 
 #social-icons img {
