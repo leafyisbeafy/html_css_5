@@ -1,7 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
-   Lines 7-49
 */
 
 html, body, div, span, applet, object, iframe,
@@ -75,6 +74,7 @@ table {
     display: flex;
 }
 
+/* Ensures header layout is aligned correctly */
 header .container {
     padding: 20px;
     justify-content: space-between;
@@ -85,19 +85,19 @@ header h1 {
     font-size: 48px;
     font-weight: 700;
     font-family: Arial, sans-serif;
+    color: #FFFFFF; /* Adjusted for readability */
 }
 
 header nav ul {
     display: flex;
-    /*gap: 25px; !* Adds space between navigation text *!*/
     font-size: 20px;
     font-family: Arial, sans-serif;
 }
 
 header nav a {
     text-decoration: none; /* Removes underline from hyperlinked text */
-    color: black; /* All nav hyperlink text color */
-    padding: 10px 20px; /* 10px above and below text, 20px to the left and right of text */
+    color: #EAEAEA; /* Adjusted for better readability */
+    padding: 10px 20px;
 }
 
 header nav a:hover {
@@ -106,24 +106,25 @@ header nav a:hover {
 }
 
 header nav a.current-page {
-    color: black;
-    border-bottom: 3px solid black;
+    color: #FFFFFF; /* Adjusted color for current page link */
+    border-bottom: 3px solid white;
 }
 
 #banner {
     /* These styles apply to the background image */
     height: 500px;
     background-image: url("image/unSplash.jpg");
-    background-position: center 88%;
+    background-position: center 70%; /* Adjusted to show more of the cat */
     background-size: 1920px;
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.35); /* change 0,0,0 to 255,255,255 for a white overlay */
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.35); /* Overlay */
 
     /* These styles apply to the text */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* if direction column, this is vertical alignment */
-    align-items: flex-start; /* if direction column, this is the horizontal alignment */
+    justify-content: center; /* Vertical alignment */
+    align-items: flex-start; /* Horizontal alignment */
+    padding: 0 30px; /* Added padding to prevent text from touching the edges */
 }
 
 #banner h2 {
@@ -140,7 +141,7 @@ header nav a.current-page {
     margin: 10px;
 }
 #banner a.btn {
-    background-color: ##645B5A;
+    background-color: #FF6347; /* Changed for better visibility */
     color: black;
     padding: 15px 25px;
     text-decoration: none;
@@ -150,25 +151,27 @@ header nav a.current-page {
 }
 
 #banner a.btn:hover {
-    background-color: #645B5A;
+    background-color: #FF4500; /* Slightly darker on hover */
 }
 
+/* Footer Styling */
 footer {
     background-color: #645B5A;
     color: whitesmoke;
     font-family: Arial, sans-serif;
-    padding: 20px; /* adds space between the content and the border */
+    padding: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* links left, icons middle, copyright right */
-    align-items: center; /* aligns vertical center */
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer a {
     color: whitesmoke;
 }
+
 footer a:hover {
-    color: ;
+    color: #FFD700; /* Added gold color for hover effect */
 }
 
 #footer-links a {
@@ -183,23 +186,21 @@ footer a:hover {
 #copyright a {
 }
 
-
 aside, #resume {
     min-height: 200px;
 }
+
 header {
     background-color: #3B5370;
 }
+
 main {
     min-height: 100px;
-    /*background-color: yellow;*/
 }
 
 aside {
-    /*background-color: green;*/
     width: 25%;
 }
 #resume {
-    /*background-color: purple;*/
     width: 75%;
 }
