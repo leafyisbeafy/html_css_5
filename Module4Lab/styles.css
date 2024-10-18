@@ -1,0 +1,205 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   Lines 7-49
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 0.75;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Lines 52-72: https://stackoverflow.com/a/36230069 */
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.container {
+    display: flex;
+}
+
+header .container {
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+}
+
+header nav ul {
+    display: flex;
+    /*gap: 25px; !* Adds space between navigation text *!*/
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+header nav a {
+    text-decoration: none; /* Removes underline from hyperlinked text */
+    color: black; /* All nav hyperlink text color */
+    padding: 10px 20px; /* 10px above and below text, 20px to the left and right of text */
+}
+
+header nav a:hover {
+    background-color: white;
+    transition:background-color .5s;
+}
+
+header nav a.current-page {
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+#banner {
+    /* These styles apply to the background image */
+    height: 500px;
+    background-image: url("image/unSplash.jpg");
+    background-position: center 88%;
+    background-size: 1920px;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.35); /* change 0,0,0 to 255,255,255 for a white overlay */
+
+    /* These styles apply to the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* if direction column, this is vertical alignment */
+    align-items: flex-start; /* if direction column, this is the horizontal alignment */
+}
+
+#banner h2 {
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+#banner p {
+    font-size: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+#banner a.btn {
+    background-color: ##645B5A;
+    color: black;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#banner a.btn:hover {
+    background-color: #645B5A;
+}
+
+footer {
+    background-color: #645B5A;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    padding: 20px; /* adds space between the content and the border */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* links left, icons middle, copyright right */
+    align-items: center; /* aligns vertical center */
+}
+
+footer a {
+    color: whitesmoke;
+}
+footer a:hover {
+    color: black;
+}
+
+#footer-links a {
+    margin-right: 10px;
+}
+
+#social-icons a {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#copyright a {
+}
+
+
+aside, #resume {
+    min-height: 200px;
+}
+header {
+    background-color: #3B5370;
+}
+main {
+    min-height: 100px;
+    /*background-color: yellow;*/
+}
+
+aside {
+    /*background-color: green;*/
+    width: 25%;
+}
+#resume {
+    /*background-color: purple;*/
+    width: 75%;
+}
