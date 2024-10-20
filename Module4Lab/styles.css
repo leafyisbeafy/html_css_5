@@ -145,7 +145,7 @@ header nav a.current-page {
     margin: 10px;
 }
 #banner a.btn {
-    background-color: #FF6347; /* Changed for better visibility */
+    background-color: #9799c8; /* Changed for better visibility */
     color: black;
     padding: 15px 25px;
     text-decoration: none;
@@ -155,7 +155,7 @@ header nav a.current-page {
 }
 
 #banner a.btn:hover {
-    background-color: #FF4500; /* Slightly darker on hover */
+    background-color: #2f94ec; /* Slightly darker on hover */
 }
 
 /* Footer Styling */
